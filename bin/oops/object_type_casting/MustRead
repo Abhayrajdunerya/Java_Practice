@@ -1,0 +1,29 @@
+
+3 rules of object TypeCasting ------------------------------------
+
+    A b = (C) d;
+
+==================================================================
+
+
+Rule - 1 (At Compile Time) ---------------------------------------
+
+    The type of 'd' & 'C' must have some relationship.
+    (either parent -> child or child -> parent or same type), otherwise we will get compile time error.
+
+==================================================================
+
+
+Rule - 2 (At Compile Time) ---------------------------------------
+
+    'C' must be either same or derived type of 'A', otherwise we will get compile time error.
+
+==================================================================
+
+
+Rule - 3 (At Runtime Time) ---------------------------------------
+
+    The underlying original object type of 'd' must be either same or derived type of 'C',
+    otherwise we will get runtime exception saying : ClassCastException.
+
+==================================================================
